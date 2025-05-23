@@ -1,0 +1,20 @@
+{
+  "title": "Players Speak",
+  "reviews": [
+    {
+      "name": "Alex Thompson",
+      "rating": 5,
+      "comment": "Count Master 3D is incredibly addictive! I love watching my crowd grow and smashing through enemy lines. The satisfaction of going through a 10x gate is unmatched!"
+    },
+    {
+      "name": "Sarah Johnson",
+      "rating": 4,
+      "comment": "Such a fun game to play when you have a few minutes to spare. The mechanics are simple but the strategy involved in choosing the right gates makes it challenging."
+    },
+    {
+      "name": "Michael Chen",
+      "rating": 5,
+      "comment": "I've been playing for weeks and still haven't gotten bored. Each level presents a unique challenge, and the satisfaction of reaching the finish line with a massive crowd is amazing!"
+    }
+  ]
+}

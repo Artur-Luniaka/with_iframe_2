@@ -1,0 +1,317 @@
+/* Index page styles */
+
+/* Hero Section */
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--white-color);
+  text-align: center;
+  padding: 120px 0;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.hero-title {
+  font-size: var(--font-size-xxlarge);
+  margin-bottom: var(--spacing-lg);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent-color);
+}
+
+.hero-description {
+  font-size: var(--font-size-medium);
+  margin-bottom: var(--spacing-xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-image {
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: var(--shadow-md);
+}
+
+/* How to Play Section */
+.how-to-play-section {
+  background-color: var(--white-color);
+  padding: var(--spacing-xxl) 0;
+}
+
+.how-to-play-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.how-to-play-text {
+  margin-bottom: var(--spacing-xl);
+}
+
+.how-to-play-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--spacing-lg);
+  background-color: var(--light-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal);
+}
+
+.step-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: var(--border-radius-full);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-large);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+}
+
+.step-title {
+  font-size: var(--font-size-large);
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary-color);
+}
+
+/* Players Speak Section */
+.players-speak-section {
+  background-color: var(--light-color);
+  padding: var(--spacing-xxl) 0;
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  justify-content: center;
+}
+
+.review-card {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  flex: 1 1 300px;
+  max-width: 350px;
+  transition: transform var(--transition-normal);
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--border-radius-full);
+  overflow: hidden;
+  margin-right: var(--spacing-md);
+}
+
+.review-author {
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.review-rating {
+  color: var(--accent-color);
+  margin-top: var(--spacing-xs);
+}
+
+.review-content {
+  font-style: italic;
+  color: var(--dark-color);
+}
+
+/* Crowd Mechanics Section */
+.crowd-mechanics-section {
+  background-color: var(--white-color);
+  padding: var(--spacing-xxl) 0;
+}
+
+.mechanics-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.mechanics-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--light-color);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+.mechanics-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.mechanics-item:hover .mechanics-title {
+  color: var(--white-color);
+}
+
+.mechanics-icon {
+  font-size: 48px;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-md);
+  transition: color var(--transition-normal);
+}
+
+.mechanics-item:hover .mechanics-icon {
+  color: var(--white-color);
+}
+
+.mechanics-title {
+  font-size: var(--font-size-large);
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+  transition: color var(--transition-normal);
+}
+
+/* Survival Tips Section */
+.survival-tips-section {
+  background-color: var(--light-color);
+  padding: var(--spacing-xxl) 0;
+}
+
+.tips-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.tip-card {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+  border-left: 5px solid var(--primary-color);
+}
+
+.tip-card:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.tip-title {
+  font-size: var(--font-size-medium);
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Battle Arena Section */
+.battle-arena-section {
+  background-color: var(--dark-color);
+  padding: var(--spacing-xxl) 0;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.battle-arena-title {
+  color: var(--accent-color);
+}
+
+.battle-arena-description {
+  max-width: 800px;
+  margin: 0 auto var(--spacing-xl);
+}
+
+.game-container {
+  max-width: 750px;
+  margin: 0 auto;
+  box-shadow: 0 0 30px rgba(255, 204, 0, 0.5);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+
+.game-container iframe {
+  display: block;
+  width: 100%;
+  height: 600px;
+  border: none;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .how-to-play-content {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xl);
+  }
+
+  .how-to-play-text {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .how-to-play-steps {
+    flex-direction: row;
+    flex: 1;
+  }
+
+  .mechanics-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .mechanics-item {
+    flex: 1 1 calc(50% - var(--spacing-xl));
+  }
+
+  .game-container iframe {
+    height: 800px;
+  }
+}
+
+@media (min-width: 992px) {
+  .mechanics-item {
+    flex: 1 1 calc(33.333% - var(--spacing-xl));
+  }
+}

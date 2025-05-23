@@ -1,0 +1,43 @@
+{
+  "pageTitle": "News - Count Master 3D Game",
+  "pageDescription": "Latest news and updates about Count Master 3D Game - Stay informed about new features and events!",
+  "title": "Battle Updates & Crowd News",
+  "news": [
+    {
+      "title": "New Obstacle Course Update",
+      "date": "May 15, 2023",
+      "image": "img/news-1.png",
+      "excerpt": "We've added 10 new challenging obstacle courses to test your crowd control skills! Navigate through spinning blades, hammers, and new enemy types in this exciting update."
+    },
+    {
+      "title": "Special Event: Mega Multiplication",
+      "date": "April 28, 2023",
+      "image": "img/news-2.png",
+      "excerpt": "For a limited time, all multiplication gates will have double their normal effect! Join the Mega Multiplication event and build massive crowds like never before."
+    },
+    {
+      "title": "New Character Skins Released",
+      "date": "April 10, 2023",
+      "image": "img/news-3.png",
+      "excerpt": "Customize your crowd with 5 new character skins! Choose from Ninja, Robot, Zombie, Superhero, and Alien themes to make your crowd stand out on the battlefield."
+    },
+    {
+      "title": "Count Master Tournament Announced",
+      "date": "March 22, 2023",
+      "image": "img/news-4.png",
+      "excerpt": "Compete against players worldwide in our first official Count Master Tournament! The player with the largest crowd at the finish line wins exclusive rewards."
+    },
+    {
+      "title": "New Boss Battle Feature",
+      "date": "March 5, 2023",
+      "image": "img/news-5.png",
+      "excerpt": "Face off against massive boss enemies at the end of each world! These challenging encounters will require strategy and a large crowd to overcome."
+    },
+    {
+      "title": "Mobile Version Now Available",
+      "date": "February 18, 2023",
+      "image": "img/news-6.png",
+      "excerpt": "Count Master 3D is now available on iOS and Android devices! Take the crowd running action with you wherever you go and play on the move."
+    }
+  ]
+}

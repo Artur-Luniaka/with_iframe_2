@@ -1,0 +1,95 @@
+{
+  "pageTitle": "Count Master 3D Game - Run and Multiply",
+  "pageDescription": "Play Count Master 3D Game - The ultimate crowd running game where you multiply your army and defeat enemies!",
+  "hero": {
+    "title": "Welcome to Count Master 3D",
+    "description": "Run, multiply your crowd, and defeat enemies in this exciting 3D game. Gather your army and conquer all obstacles in your path!",
+    "image": "./img/hero-img.jpg"
+  },
+  "howToPlay": {
+    "title": "Command Guide",
+    "description": "Count Master 3D is an exciting crowd runner game where your goal is to build the biggest army possible and overcome all obstacles. Here's how to get started:",
+    "steps": [
+      {
+        "title": "Gather Your Crowd",
+        "description": "Run through number gates to multiply your crowd. The bigger your number, the stronger your army!"
+      },
+      {
+        "title": "Avoid Obstacles",
+        "description": "Navigate through various obstacles that can reduce your crowd size. Stay alert and choose your path wisely!"
+      },
+      {
+        "title": "Battle Enemies",
+        "description": "Engage in battles with enemy crowds. Your success depends on your crowd size and strategic movements."
+      },
+      {
+        "title": "Reach the Finish Line",
+        "description": "Make it to the end with as many crowd members as possible to achieve victory and earn rewards!"
+      }
+    ]
+  },
+  "crowdMechanics": {
+    "title": "Crowd Mechanics",
+    "items": [
+      {
+        "icon": "➕",
+        "title": "Multiplication Gates",
+        "description": "Run through gates with multiplication symbols to increase your crowd size exponentially."
+      },
+      {
+        "icon": "➖",
+        "title": "Subtraction Gates",
+        "description": "Avoid gates with subtraction symbols as they will reduce your crowd numbers."
+      },
+      {
+        "icon": "🔄",
+        "title": "Crowd Formation",
+        "description": "Your crowd automatically forms different shapes to navigate obstacles efficiently."
+      },
+      {
+        "icon": "⚔️",
+        "title": "Battle System",
+        "description": "When encountering enemies, your crowds will automatically engage in battle. The larger crowd usually wins!"
+      },
+      {
+        "icon": "🏁",
+        "title": "Victory Conditions",
+        "description": "Reach the finish line with at least one crowd member to complete the level successfully."
+      },
+      {
+        "icon": "🌟",
+        "title": "Power-ups",
+        "description": "Collect special power-ups throughout levels to gain temporary advantages like speed boosts or invincibility."
+      }
+    ]
+  },
+  "survivalTips": {
+    "title": "Survival Tips",
+    "tips": [
+      {
+        "title": "Always Go for Multiplication",
+        "description": "Prioritize multiplication gates over addition gates for faster crowd growth. A 2x gate is much better than a +10 gate when you already have 50 members!"
+      },
+      {
+        "title": "Size Management",
+        "description": "Sometimes having a smaller, more manageable crowd is better for navigating tight spaces and obstacles."
+      },
+      {
+        "title": "Enemy Assessment",
+        "description": "Quickly assess enemy crowd sizes before engaging. If they outnumber you, look for ways to increase your numbers first."
+      },
+      {
+        "title": "Strategic Splitting",
+        "description": "When faced with multiple paths, choose the one that offers the best multiplication opportunities."
+      },
+      {
+        "title": "Obstacle Awareness",
+        "description": "Stay alert for spinning blades, hammers, and other obstacles that can quickly diminish your crowd size."
+      }
+    ]
+  },
+  "battleArena": {
+    "title": "Battle Arena",
+    "description": "Ready to test your skills? Jump into the action and see how far you can go with your crowd! Control your runner, multiply your army, and defeat all enemies in your path."
+  }
+}
