@@ -1,10 +1,7 @@
 // Index page specific JavaScript
 document.addEventListener("DOMContentLoaded", function () {
   // Only run this code on the index page
-  if (
-    window.location.pathname === "/" ||
-    window.location.pathname.includes("index.html")
-  ) {
+  if (window.location.pathname === "/") {
     // Load index page content from JSON
     fetch("data/index.json")
       .then((response) => response.json())
