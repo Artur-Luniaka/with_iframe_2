@@ -167,3 +167,58 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch((error) => console.error("Error loading reviews data:", error));
   }
 });
+
+// --- Cookie Consent Bar Functionality ---
+document.addEventListener("DOMContentLoaded", function () {
+  const cookieBar = document.getElementById("cookie-consent-bar");
+  const acceptButton = document.getElementById("accept-cookies-btn");
+  const COOKIE_NAME = "cookiesAccepted"; // Имя куки
+  const COOKIE_EXPIRATION_DAYS = 90; // Срок действия куки в днях
+
+  // Функция для установки куки
+  function setCookie(name, value, days) {
+    let expires = "";
+    if (days) {
+      const date = new Date();
+      date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
+
+  // Функция для получения куки
+  function getCookie(name) {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(";");
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) === " ") c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  // Проверяем, было ли уже принято согласие
+  if (!getCookie(COOKIE_NAME)) {
+    // Если куки нет, показываем бар с небольшой задержкой для smooth-эффекта
+    setTimeout(() => {
+      if (cookieBar) {
+        // Проверяем, существует ли элемент, прежде чем добавлять класс
+        cookieBar.classList.add("show");
+      }
+    }, 1000); // Показываем через 1 секунду
+  }
+
+  // Обработчик нажатия кнопки "Принять"
+  if (acceptButton) {
+    acceptButton.addEventListener("click", function () {
+      setCookie(COOKIE_NAME, "true", COOKIE_EXPIRATION_DAYS);
+      if (cookieBar) {
+        cookieBar.classList.remove("show"); // Скрываем бар
+        setTimeout(() => {
+          cookieBar.style.display = "none"; // Удаляем из потока документа после анимации
+        }, 300); // Соответствует времени transition в CSS
+      }
+    });
+  }
+});

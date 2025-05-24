@@ -315,3 +315,89 @@
     flex: 1 1 calc(33.333% - var(--spacing-xl));
   }
 }
+
+/* --- Cookie Consent Bar Styles --- */
+.cookie-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--dark-color); /* Используем темный цвет из палитры */
+  color: var(--white-color); /* Белый текст */
+  padding: var(--spacing-md) var(--spacing-lg); /* Отступы */
+  box-shadow: var(--shadow-lg); /* Тень для выделения */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Убедитесь, что он поверх всего */
+  transform: translateY(100%); /* Скрываем по умолчанию */
+  transition: transform var(--transition-normal) ease-out; /* Анимация появления */
+}
+
+.cookie-bar.show {
+  transform: translateY(0); /* Показываем бар */
+}
+
+.cookie-bar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md); /* Отступ между текстом и кнопкой */
+  max-width: var(--container-width); /* Ограничиваем ширину содержимого */
+  text-align: center;
+}
+
+.cookie-bar p {
+  margin: 0; /* Убираем стандартные отступы у параграфа */
+  font-size: var(--font-size-normal);
+  line-height: 1.5;
+}
+
+.cookie-bar .cookie-policy-link {
+  color: var(--accent-color); /* Акцентный цвет для ссылки */
+  text-decoration: underline;
+  transition: color var(--transition-fast);
+}
+
+.cookie-bar .cookie-policy-link:hover {
+  color: var(--light-color);
+}
+
+.cookie-bar .btn.btn-primary {
+  background-color: var(--primary-color); /* Основной цвет для кнопки */
+  color: var(--white-color);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-normal);
+  cursor: pointer;
+  transition: background-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.cookie-bar .btn.btn-primary:hover {
+  background-color: darken(
+    var(--primary-color),
+    10%
+  ); /* Немного темнее при наведении, если используете препроцессор. Иначе задайте конкретный цвет */
+  transform: translateY(-2px); /* Легкий эффект при наведении */
+}
+
+/* Для чистого CSS, если darken не поддерживается, используйте конкретное значение */
+.cookie-bar .btn.btn-primary:hover {
+  background-color: #e63939; /* Пример немного более темного красного */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (min-width: 768px) {
+  .cookie-bar-content {
+    flex-direction: row; /* На больших экранах текст и кнопка в один ряд */
+    justify-content: space-between;
+  }
+
+  .cookie-bar p {
+    text-align: left;
+    flex-grow: 1; /* Позволяем тексту занимать доступное пространство */
+    margin-right: var(--spacing-lg); /* Отступ между текстом и кнопкой */
+  }
+}
